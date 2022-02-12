@@ -1,5 +1,5 @@
 {
-  "name": "rpg-styled-ui",
+  "name": "k-rpg-styled-ui",
   "title": "RPG Styled UI for Foundry VTT",
   "description": "Theme for DnD5e.",
   "version": "v0.7.6",
@@ -26,7 +26,7 @@
     }
   ],
   "packs": [],
-  "url": "https://github.com/DMKizzle/rpg-styled-ui",
-  "manifest": "https://raw.githubusercontent.com/DMKizzle/rpg-styled-ui/main/module.json",
-  "download": "https://github.com/DMKizzle/rpg-styled-ui/archive/refs/tags/v0.7.6.zip"
+  "url": "https://github.com/DMKizzle/k-rpg-styled-ui",
+  "manifest": "https://raw.githubusercontent.com/DMKizzle/k-rpg-styled-ui/main/module.json",
+  "download": "https://github.com/DMKizzle/k-rpg-styled-ui/archive/refs/tags/v0.7.6.zip"
 }

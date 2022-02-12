@@ -1,6 +1,6 @@
 Hooks.on('init', () => {
 	// Register module settings.
-	game.settings.register('rpg-styled-ui', 'navigationVerticalToggle', {
+	game.settings.register('k-rpg-styled-ui', 'navigationVerticalToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.NAVIGATION_HINT'),
 		scope: "world",
@@ -11,7 +11,7 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('rpg-styled-ui', 'compactModeToggle', {
+	game.settings.register('k-rpg-styled-ui', 'compactModeToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.COMPACT_MODE'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.COMPACT_MODE_HINT'),
 		scope: "world",
@@ -22,7 +22,7 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('rpg-styled-ui', 'standardLogoToggle', {
+	game.settings.register('k-rpg-styled-ui', 'standardLogoToggle', {
 		name: game.i18n.localize('RPGUI.SETTINGS.STANDARD_LOGO'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.STANDARD_LOGO_HINT'),
 		scope: "world",
@@ -33,7 +33,7 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('rpg-styled-ui', 'minimalUICompatibility', {
+	game.settings.register('k-rpg-styled-ui', 'minimalUICompatibility', {
 		name: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.MINIMAL_UI_HINT'),
 		scope: "world",
@@ -44,7 +44,7 @@ Hooks.on('init', () => {
 			location.reload();
 		}
 	});
-	game.settings.register('rpg-styled-ui', 'disableAllStyles', {
+	game.settings.register('k-rpg-styled-ui', 'disableAllStyles', {
 		name: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES'),
 		hint: game.i18n.localize('RPGUI.SETTINGS.DISABLE_STYLES_HINT'),
 		scope: "client",
@@ -56,8 +56,8 @@ Hooks.on('init', () => {
 		}
 	});
 
-	if (!game.settings.get('rpg-styled-ui', 'compactModeToggle')) {
-		if (!game.settings.get('rpg-styled-ui', 'standardLogoToggle')) {
+	if (!game.settings.get('k-rpg-styled-ui', 'compactModeToggle')) {
+		if (!game.settings.get('k-rpg-styled-ui', 'standardLogoToggle')) {
 			addClassByQuerySelector("hide", "img#logo")
 
 			let newLogo = document.createElement('div');
@@ -68,18 +68,18 @@ Hooks.on('init', () => {
 		}
 	}
 
-	if (!game.settings.get('rpg-styled-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
-	if (game.settings.get('rpg-styled-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
+	if (!game.settings.get('k-rpg-styled-ui', 'disableAllStyles')) { rpgUIAddMainCss() }
+	if (game.settings.get('k-rpg-styled-ui', 'minimalUICompatibility')) { addClassByQuerySelector('minimal-ui-mode', 'body.vtt') }
 });
 
 Hooks.on('getSceneNavigationContext', () => {
-	if (!game.settings.get('rpg-styled-ui', 'navigationVerticalToggle')) {
+	if (!game.settings.get('k-rpg-styled-ui', 'navigationVerticalToggle')) {
 		navigation = document.querySelector("nav.app > ol#scene-list");
 		if (navigation) {
 			navigation.classList.add("vertical")
 		}
 	}
-	if (game.settings.get('rpg-styled-ui', 'compactModeToggle')) {
+	if (game.settings.get('k-rpg-styled-ui', 'compactModeToggle')) {
 		addClassByQuerySelector("compact-mode", "body")
 	}
 });
@@ -101,7 +101,7 @@ function rpgUIAddMainCss() {
 	const mainCss = document.createElement("link");
 	mainCss.setAttribute("rel", "stylesheet")
 	mainCss.setAttribute("type", "text/css")
-	mainCss.setAttribute("href", "modules/rpg-styled-ui/css/rpg-ui.css")
+	mainCss.setAttribute("href", "modules/k-rpg-styled-ui/css/rpg-ui.css")
 	mainCss.setAttribute("media", "all")
 	head.insertBefore(mainCss, head.lastChild);
 }
