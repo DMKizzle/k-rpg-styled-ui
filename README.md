@@ -1,5 +1,5 @@
 # RPG Styled UI
-Foundry VTT DnD5e RPG Styled UI
+A not great fork of Foundry VTT DnD5e RPG Styled UI by Xbozon to try to force it to work with the FATE system.
 
 A simple styling for FoundryVTT in black and red. Includes:
 - Chat layout.
