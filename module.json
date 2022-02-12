@@ -1,8 +1,8 @@
 {
   "name": "k-rpg-styled-ui",
-  "title": "RPG Styled UI for Foundry VTT",
-  "description": "Theme for DnD5e.",
-  "version": "v0.7.6",
+  "title": "Gritty Styled UI for Foundry VTT",
+  "description": "Theme for FATE.",
+  "version": "v0.1.0-alpha",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "author": "DMKizzle",
@@ -28,5 +28,5 @@
   "packs": [],
   "url": "https://github.com/DMKizzle/k-rpg-styled-ui",
   "manifest": "https://raw.githubusercontent.com/DMKizzle/k-rpg-styled-ui/main/module.json",
-  "download": "https://github.com/DMKizzle/k-rpg-styled-ui/archive/refs/tags/v0.7.6.zip"
+  "download": "https://github.com/DMKizzle/k-rpg-styled-ui/archive/refs/tags/v0.1.0-alpha.zip"
 }
