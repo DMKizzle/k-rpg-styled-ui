@@ -6,7 +6,6 @@
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9",
   "author": "DMKizzle",
-  "systems": [],
   "styles": [],
   "scripts": [ "scripts/rpg-ui.js" ],
   "languages": [
